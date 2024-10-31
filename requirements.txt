@@ -1,4 +1,4 @@
 fastapi
 pillow
-wheel
-face_recognition
+#wheel
+#face_recognition
