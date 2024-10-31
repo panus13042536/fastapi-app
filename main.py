@@ -1,6 +1,8 @@
 from typing import Optional
 
 from PIL import Image, ImageDraw
+import numpy as np
+import pickle
 
 import io
 from fastapi import FastAPI, File, Form, UploadFile
