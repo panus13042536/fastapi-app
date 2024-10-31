@@ -1,4 +1,7 @@
 from typing import Optional
+
+from PIL import Image, ImageDraw
+
 import io
 from fastapi import FastAPI, File, Form, UploadFile
 
