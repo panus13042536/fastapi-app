@@ -17,5 +17,5 @@ def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
 @app.post("/faces_recognition/")
-async def faces_recognition(image_upload: UploadFile = File(...)):
-    return {"faces": "PackTest"}
+async def faces_recognition(image_upload: UploadFile = File(...),text:str):
+    return {"faces": "PackTest","text": text}
