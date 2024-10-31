@@ -1,2 +1,3 @@
 fastapi[all]
 pillow
+face_recognition
