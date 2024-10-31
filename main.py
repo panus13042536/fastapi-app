@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "add import io"}
+    return {"message": "face-recognition"}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
