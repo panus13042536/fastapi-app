@@ -1,5 +1,5 @@
 from typing import Optional
-
+import io
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "add import io"}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
