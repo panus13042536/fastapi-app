@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "numpy 1234"}
+    return {"message": "numpy 1234","pending":"123","waiting contact":"456","waiting decision":"789","close":"5"}
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
